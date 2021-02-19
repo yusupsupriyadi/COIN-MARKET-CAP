@@ -1,22 +1,26 @@
 
 import Market from "../Components/Market";
-import Layouts from "../Components/Layouts";
 import Navbar from "../Components/Navbar";
 import Banner from "../Components/Banner";
 import Footer from "../Components/Footer";
+import Head from "next/head";
 
 
 
 
 export default function index() {
     return (
-        <Layouts title="Coin Market">
+        <div>
+        <Head>
+             <title>Coin Market</title>
+                <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+                </Head>
             <div className="bg-gray-200 dark:bg-indigo-background">
                 <Navbar/>
                 <Banner/>
             <Market />
             <Footer/>
         </div>
-        </Layouts>
+        </div>
     )
 }

@@ -1,20 +1,8 @@
 import React from 'react'
 import {
-    Table,
-    Thead,
-    Tbody,
-    Tr,
-    Th,
-    Td,
     Text,
     Spinner,
-    Flex,
-    Image,
     Badge,
-    Grid,
-    Button,
-    Box,
-    DarkMode,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { QueryClient, useQuery } from 'react-query';
@@ -31,9 +19,7 @@ type Price = {
     market_cap: number
 };
 
-type PageProps = {
-    initialPrice: Price[];
-};
+
 
 // Memanggil API
 const getMarket = async (page = 1) => {
@@ -110,7 +96,7 @@ export default function Market() {
                     <table className="min-w-full leading-normal  ">
                         <thead >
                             <tr>
-                                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-indigo-dark  text-left text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase tracking-wider">
+                                <th className="px-8 py-3 border-b-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-indigo-dark  text-left text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase tracking-wider">
                                     COIN
                                 </th>
                                 <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-indigo-dark text-left text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase tracking-wider">
@@ -132,7 +118,7 @@ export default function Market() {
                             {isError && <Text>There was an error processing your request</Text>}
                             {isSuccess && data?.map((price: Price) => (
                             <tr>
-                                    <td className="px-2 py-5 border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-indigo-dark text-sm">
+                                    <td className="px-8 py-5 border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-indigo-dark text-sm">
                                     <div className="flex items-center">
                                         <div className="flex-shrink-0 w-10 h-10">
                                             <img className="w-full h-full rounded-full" src={price.image} />
