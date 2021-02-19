@@ -152,7 +152,7 @@ export default function Market() {
                     </table>
                     <div className="px-5 py-5 bg-white dark:bg-indigo-dark dark:border-gray-600 border-t flex flex-col xs:flex-row items-left md:items-center lg:items-center xs:justify-between">
                         <span className="text-xs xs:text-sm text-gray-700 dark:text-gray-200">
-                            <Text className="font-bold" >{page} > 100</Text>
+                            <Text className="font-bold" >{page}</Text>
                         </span>
                         <div className="inline-flex mt-2 xs:mt-0">
                             <button onClick={previousPage}
