@@ -49,7 +49,7 @@ export default function Navbar() {
                     <div className={`${isOpen ? 'block' : 'hidden'} md:hidden lg:flex items-center`}>
                         <div className="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
                             <a href="https://www.coingecko.com/id/api" className="text-grey-500 dark:text-white py-2 px-4 font-medium transition-colors duration-150 focus:outline-none focus:text-white" >API</a>
-                            <a href="https://yusupsupriyadi.000webhostapp.com" className="text-grey-500 dark:text-white py-2 px-4 font-medium transition-colors duration-150 focus:outline-none focus:text-white" >MY Website</a>
+                            <a href="https://yusupsupriyadi.github.io/" className="text-grey-500 dark:text-white py-2 px-4 font-medium transition-colors duration-150 focus:outline-none focus:text-white" >MY Website</a>
                         </div>
                         <div className="flex items-center py-2 -mx-1 md:mx-0">
                             <a href="https://github.com/yusupsupriyadi/COIN-MARKET-CAP" className="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-gray-500 font-medium text-white leading-5 hover:bg-indigo-300 md:mx-2 md:w-auto">Github</a>
